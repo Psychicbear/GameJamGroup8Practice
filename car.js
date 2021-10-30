@@ -1,5 +1,5 @@
 function createCar(){ //creates car as sprite
-    car = createSprite(200, 200); // placeholder position
+    car = createSprite(finishPos.x, finishPos.y); // placeholder position
     carImg.resize(0, 26);
     car.addImage(carImg);
     car.rotation = -90;
