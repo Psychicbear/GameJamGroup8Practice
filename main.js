@@ -25,12 +25,12 @@ function setup(){
     finishImg.resize(RES.x/12, RES.y/6)
     loadTrack()
     createCar();
-    playerControls();
-    car.collide(grassGroup, reset())
 }
 
 function draw(){
     drawSprites()
+    playerControls();
+    car.collide(grassGroup, reset())
 }
 
 
