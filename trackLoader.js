@@ -26,7 +26,7 @@ function loadTrack(){
                 case '2':
                     //Create finish sprite
                     tile = createSprite(x,y,tilesizeX,tilesizeY);
-                    finishPos = {x: x, y: y}
+                    finishPos = createVector(x,y)
                     tile.addImage('road', finishImg);
                     tile.addToGroup(roadGroup);
                     break;                    

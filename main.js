@@ -20,9 +20,13 @@ function setup(){
     roadImg.resize(RES.x/12, RES.y/6)
     finishImg.resize(RES.x/12, RES.y/6)
     loadTrack()
-    console.log(finishPos)
+    createCar();
+    playerControls();
+    car.collide(grassGroup, reset())
 }
 
 function draw(){
     drawSprites()
 }
+
+
