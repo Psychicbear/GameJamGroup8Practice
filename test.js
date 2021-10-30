@@ -2,28 +2,24 @@
 let soundTest
 let spriteTest
 
+let car;
+let carVelocityX = 0;
+let carVelocityY = 0;
+
+
+
 function preload(){
-    soundFormats('mp3','ogg')
-    soundTest=loadSound("sounds/somewhereiwentwrong-josh-penn-pierson.mp3")
-    soundTest.setVolume(0.1) //adjusts the volume up or down of a specific sound
+
 }
 
 function setup(){
-    createCanvas(400,400)
-    background("grey")
-    text("Click to play/stop the sound file!",10,height-20)
-    text("Music used for test by: Josh Penn-Piersen",10,height-5)
-    spriteTest=createSprite(width/2,height/2,50,50)
+    createCanvas(600,600)
+    background("#222")
 }
 
 function draw(){
     drawSprites()
 }
 
-function mousePressed(){
-    if(soundTest.isPlaying()) {
-        soundTest.stop()
-    } else {
-        soundTest.play()
-    }
-}
+
+
